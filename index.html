@@ -16,7 +16,9 @@
             from browser import document
 
             def show_text(e):
-                document['output'].textContent = e.target.value;
+                exec('n = 2 + 3', globals(), None)
+                document['output'].textContent = 'The answer is %s' % n
+                #document['output'].textContent = e.target.value;
 
             document['text'].bind('input', show_text)
         </script>
