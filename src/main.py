@@ -1,6 +1,9 @@
 from browser import document
 
 def show_text(e):
+  if e.key == 'Enter':
+    document['output'].textContent = dir(e)
+  return
   h = {}
   try:
     exec('n = ' + e.target.value, h, None)
@@ -9,4 +12,4 @@ def show_text(e):
     pass
   #document['output'].textContent = e.target.value;
 
-document['text'].bind('input', show_text)
+document['text'].bind('keypress', show_text)
