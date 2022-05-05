@@ -1,9 +1,8 @@
 from browser import document
 
 def show_text(e):
-  if e.key == 'Enter':
-    document['output'].textContent = dir(e)
-  return
+  if not e.key == 'Enter':
+    return
   h = {}
   try:
     exec('n = ' + e.target.value, h, None)
