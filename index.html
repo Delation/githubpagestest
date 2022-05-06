@@ -9,6 +9,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.5/brython_stdlib.min.js"></script>
 </head>
 <body onload="brython()">
+    <span>Powered by Brython! (Browser Python)</span>
+    <br>
+    <span>Addition/Concatenation: +, Subtraction: -, Multiplication: *, Division: /, Modulo: %, Exponents: **, Floor Division: //</span>
+    <br>
+    <span>Assignment operators are not supported. Keep in mind, anything that is syntactical in Python (<code>n = *</code>) should be supported.</span>
+    <br>
     <input type="text" id="text" placeholder="Your equation here!">
     <span id="output"></span>
     <script type="text/python" id="script1" src="src/main.py"></script>
