@@ -21,6 +21,4 @@ def show_text(e):
   #document['output'].textContent = e.target.value;
 
 document['text'].bind('keypress', show_text)
-
-
-document['user_in'].bind('keypress', show_text)
+document['user_in'].bind('keypress', save_user)
